@@ -13,18 +13,47 @@
 </head>
 <body>
   <nav class="navbar navbar-default navbar-fixed-top" id="site-header">
-    <div class="container">
-      <h3>Olivia!!!</h3>
+    <div class="container no-pad">
+      <div class="header-left">
+        <h3>Olivia Evans</h3>
+      </div>
+      <div class="header-right">
+        <ul class="nav nav-tabs" role="tablist">
+          <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+          <li role="presentation"><a href="#resume" aria-controls="resume" role="tab" data-toggle="tab">Resume</a></li>
+          <li role="presentation"><a href="#photos" aria-controls="photos" role="tab" data-toggle="tab">Photos</a></li>
+          <li role="presentation"><a href="#contact" aria-controls="contact" role="tab" data-toggle="tab">Contact</a></li>
+        </ul>
+      </div>
     </div>
   </nav>
   <div class="container">
-    <div id="hero-section">
-      <div id="hero-photo" class="col-md-5">
-        <div class="hero-picture"></div>
+    <div class="tab-content">
+      <div role="tabpanel" class="tab-pane active" id="home">
+        <div id="hero-section">
+          <div id="hero-photo" class="col-md-5">
+            <div class="hero-picture"></div>
+          </div>
+          <div id="hero-text" class="col-md-7">
+            <h1>Olivia Evans</h1>
+            <h5>The originator of AWESOME!!!</h5>
+          </div>
+        </div>
       </div>
-      <div id="hero-text" class="col-md-7">
-        <h1>Olivia Evans</h1>
-        <h5>The originator of AWESOME!!!</h5>
+      <div role="tabpanel" class="tab-pane" id="resume">
+        <div class="container">
+          <h1>THIS IS THE RESUME PAGE</h1>
+        </div>
+      </div>
+      <div role="tabpanel" class="tab-pane" id="photos">
+        <div class="container">
+          <h1>THIS IS THE PHOTOS PAGE</h1>
+        </div>
+      </div>
+      <div role="tabpanel" class="tab-pane" id="contact">
+        <div class="container">
+          <h1>THIS IS THE CONTACT PAGE</h1>
+        </div>
       </div>
     </div>
   </div>
