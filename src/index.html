@@ -18,11 +18,11 @@
         <h3>Olivia Evans</h3>
       </div>
       <div class="header-right">
-        <ul class="nav nav-tabs" role="tablist">
-          <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
-          <li role="presentation"><a href="#resume" aria-controls="resume" role="tab" data-toggle="tab">Resume</a></li>
-          <li role="presentation"><a href="#photos" aria-controls="photos" role="tab" data-toggle="tab">Photos</a></li>
-          <li role="presentation"><a href="#contact" aria-controls="contact" role="tab" data-toggle="tab">Contact</a></li>
+        <ul class="nav navbar-nav" role="tablist" id="myTab">
+          <li class="menu-tab active"><a href="#home" role="tab" data-toggle="tab">Home</a></li>
+          <li class="menu-tab"><a href="#resume" role="tab" data-toggle="tab">Resume</a></li>
+          <li class="menu-tab"><a href="#photos" role="tab" data-toggle="tab">Photos</a></li>
+          <li class="menu-tab"><a href="#contact" role="tab" data-toggle="tab">Contact</a></li>
         </ul>
       </div>
     </div>
@@ -41,8 +41,18 @@
         </div>
       </div>
       <div role="tabpanel" class="tab-pane" id="resume">
-        <div class="container">
+        <div class="container" class="col-md-12">
           <h1>THIS IS THE RESUME PAGE</h1>
+          <div class="col-md-7">
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+            sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+          </div>
+          <div id="hero-photo" class="col-md-5">
+            <div class="hero-picture"></div>
+          </div>
         </div>
       </div>
       <div role="tabpanel" class="tab-pane" id="photos">
@@ -57,8 +67,8 @@
       </div>
     </div>
   </div>
-
-  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/main.min.js?v=CACHE_BUST_STRING"></script>
 </body>
 </html>
