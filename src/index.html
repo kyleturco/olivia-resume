@@ -16,16 +16,23 @@
 <body>
   <nav class="navbar navbar-default navbar-fixed-top" id="site-header">
     <div class="container">
-      <div class="header-left">
-        <h3>Olivia Evans</h3>
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Olivia Evans</a>
       </div>
-      <div class="header-right">
-        <ul class="nav navbar-nav" role="tablist" id="myTab">
-          <li class="menu-tab active"><a href="#home" role="tab" data-toggle="tab">Home</a></li>
-          <li class="menu-tab"><a href="#resume" role="tab" data-toggle="tab">Resume</a></li>
-          <li class="menu-tab"><a href="#photos" role="tab" data-toggle="tab">Photos</a></li>
-          <li class="menu-tab"><a href="#contact" role="tab" data-toggle="tab">Contact</a></li>
-        </ul>
+      <div class="collapse navbar-collapse" id="main-navbar">
+        <div class="container">
+          <ul class="nav navbar-nav navbar-right" role="tablist" id="myTab">
+            <li class="menu-tab active"><a href="#home" role="tab" data-toggle="tab">Home</a></li>
+            <li class="menu-tab"><a href="#resume" role="tab" data-toggle="tab">Resume</a></li>
+            <li class="menu-tab"><a href="#photos" role="tab" data-toggle="tab">Photos</a></li>
+            <li class="menu-tab"><a href="#contact" role="tab" data-toggle="tab">Contact</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </nav>
