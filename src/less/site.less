@@ -75,8 +75,8 @@
 
 // Resume Styles
 #download-section {
-  border: 1px solid #dedede;
-  padding: 1.5em 1em 3em 1em;
+  position: relative;
+  display: none;
   h4 {
     text-align: center;
     padding-bottom: 1em;
@@ -84,5 +84,18 @@
   button {
     display: block;
     margin: 0 auto;
+  }
+}
+
+@media (min-width: @screen-sm-min) {
+  #download-section {
+    display: block;
+    .wrapper {
+      position: fixed;
+    }
+    .download-box-content {
+      border: 1px solid #dedede;
+      padding: 1.5em 3em 3em 3em;
+    }
   }
 }
