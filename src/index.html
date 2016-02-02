@@ -152,11 +152,17 @@
     <div role="tabpanel" class="tab-pane" id="contact">
       <div class="container">
         <h1>Contact Olivia</h1>
-        <div id="contact-form">
+        <div id="contact-form" class="col-md-7 no-left-pad">
           <form action="//formspree.io/kyleturco@gmail.com" method="POST">
-            <input type="text" name="name">
-            <input type="email" name="_replyto">
-            <input type="submit" value="Send">
+            <fieldset class="form-group">
+              <label for="emailSubmit">Your Email</label>
+              <input id="emailSubmit" class="form-control" type="email" name="_replyto" required>
+            </fieldset>
+            <fieldset class="form-group">
+              <label for="messageSubmit">Your Message</label>
+              <textarea id="messageSubmit" class="form-control" type="text" name="name" required></textarea>
+            </fieldset>
+            <button type="submit" class="btn btn-default" value="Send">Send Your Message</button>
           </form>
         </div>
       </div>
