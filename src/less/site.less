@@ -66,6 +66,14 @@
   }
 }
 
+.mobile-resume-item {
+  margin: 1.5em 0;
+  line-height: 1;
+  h5 {
+    font-weight: 500;
+  }
+}
+
 // Photo Page styles
 .photo-thumb {
   display: block;
@@ -79,6 +87,7 @@
 
 // Resume Styles
 #download-section {
+  display: none;
   position: relative;
   display: none;
   h4 {
@@ -91,9 +100,14 @@
   }
 }
 
+#resume-section-desktop {
+  display: none;
+}
+
+
 @media (min-width: @screen-sm-min) {
   #download-section {
-    display: block;
+    display: none;
     .wrapper {
       position: fixed;
     }
@@ -101,6 +115,15 @@
       border: 1px solid #dedede;
       padding: 1.5em 3em 3em 3em;
     }
+  }
+}
+
+@media (min-width: @screen-md-min) {
+  #resume-section-desktop {
+    display: block;
+  }
+  #resume-section-mobile {
+    display: none;
   }
 }
 
