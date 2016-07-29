@@ -1,16 +1,19 @@
 $(document).ready(function ready() {
 
   function init() {
-    photoModal();
+    photoModal()
   }
+
+  var $photoThumb = $('.photo-thumb')
+  var $modalImg = $('#photoModal img')
 
   // tells the modal which photo to open
   function photoModal() {
-    $('.photo-thumb').on('click', function(e) {
-      var dataUrl = $(this).attr('src');
-      $('#photoModal img').attr('src', $(this).attr('src'));
-    });
-  };
+    $photoThumb.on('click', function(e) {
+      var dataUrl = $(this).attr('src')
+      $modalImg.attr('src', dataUrl)
+    })
+  }
 
-  init();
-});
+  init()
+})
