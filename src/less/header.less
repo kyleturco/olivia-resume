@@ -1,15 +1,8 @@
 /* Header Styles */
-
-// 992px and up
-@media (min-width: @screen-md-min) {
-  #site-header {
-    .container {
-      padding: .7em 0;
-    }
-  }
-  .navbar-default .navbar-nav>.active>a,
-  .navbar-default .navbar-nav>.active>a:focus,
-  .navbar-default .navbar-nav>.active>a:hover {
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+  @media (min-width: @screen-md-min) {
     border-bottom: 3px solid @orange;
     background-color: transparent;
     padding-bottom: 10px;
@@ -17,26 +10,9 @@
   }
 }
 
-.navbar {
-  padding: 0.5em 0;
-}
-
 .navbar-brand {
   font-family: 'Roboto';
   font-weight: 300;
   font-size: 2em;
   color: #1f1f1f;
-}
-
-@media (min-width: @screen-md-min) {
-  .navbar-brand {
-    margin-top: 0.35em;
-  }
-}
-
-#main-navbar {
-  li {
-    font-family: 'Roboto';
-    font-size: 1.1em;
-  }
 }
