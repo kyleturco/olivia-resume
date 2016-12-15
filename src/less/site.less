@@ -35,35 +35,15 @@
   }
 }
 
-
-// Mobile/tablet
-#photo-left {
-  background: url(../assets/images/hero-image-1.jpg) no-repeat;
-  background-size: cover;
-  display: block;
-  height: 400px;
-  width: 100%;
-  background-position: center;
-  @media (min-width: @screen-sm-min) {
-    height: 500px;
-  }
+// Nav
+.navbar {
+  background: @white;
 }
 
-#photo-right {
-  display: none;
-  @media (min-width: @screen-sm-min) {
-    background: url(../assets/images/hero-image-2.jpg) no-repeat;
-    background-size: cover;
-    display: block;
-    height: 500px;
-    width: 100%;
-  }
-}
-
-// Homepage Styles
-#homepage-text {
-  @media (min-width: @screen-sm-min) {
-    margin-top: 2em;
+// Hompage
+.homepage {
+  &__photo {
+    margin-bottom: 1em;
   }
 }
 
