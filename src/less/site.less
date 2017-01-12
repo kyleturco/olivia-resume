@@ -54,6 +54,14 @@
     padding: 1em 0;
     border-bottom: 1px solid @borderColor;
 
+    &__item {
+      margin-bottom: 1em;
+
+      @media (min-width: @screen-sm-min) {
+        margin-bottom: 0.5em;
+      }
+    }
+
     &__header {
       font-size: 1.75em;
       font-weight: 500;
