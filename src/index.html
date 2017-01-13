@@ -27,21 +27,21 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand navbar__logo navbar__link "href="#home" role="tab">Olivia Evans</a>
+        <a class="navbar-brand navbar__logo navbar__link "href="#home">Olivia Evans</a>
       </div>
       <div class="collapse navbar-collapse" id="main-navbar">
         <div class="container">
-          <ul class="nav navbar-nav navbar-right" role="tablist" id="myTab">
-            <li>
-              <a class="navbar__link" href="#resume" role="tab">Resume</a>
-            </li>
-            <li>
-              <a class="navbar__link" href="#photos" role="tab">Photos</a>
-            </li>
-            <li>
-              <a class="navbar__link" href="#contact" role="tab">Contact</a>
-            </li>
-          </ul>
+          <div class="nav navbar-nav navbar-right" role="tablist" id="myTab">
+            <div class="navbar__link-container">
+              <a class="navbar__link" href="#resume">Resume</a>
+            </div>
+            <div class="navbar__link-container">
+              <a class="navbar__link" href="#photos">Photos</a>
+            </div>
+            <div class="navbar__link-container">
+              <a class="navbar__link" href="#contact">Contact</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -50,8 +50,8 @@
     <!-- Homepage tab -->
     <div role="tabpanel" class="tab-pane active homepage" id="home">
       <div class="container">
-        <div class="row">
-          <div class="col-md-7">
+        <div class="row homepage__photo-container">
+          <div class="col-md-7 hidden-xs">
             <img class="img-responsive homepage__photo" src="../assets/images/hero-image-1.jpg" alt="Olivia Evans actress" />
           </div>
           <div class="col-md-5">

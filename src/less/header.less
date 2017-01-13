@@ -1,14 +1,22 @@
-// /* Header Styles */
-// .navbar-default .navbar-nav>.active>a,
-// .navbar-default .navbar-nav>.active>a:focus,
-// .navbar-default .navbar-nav>.active>a:hover {
-//   @media (min-width: @screen-md-min) {
-//     border-bottom: 3px solid @orange;
-//     background-color: transparent;
-//     padding-bottom: 10px;
-//     color: @orange;
-//   }
-// }
+.navbar {
+  &__link-container {
+    padding: 1em;
+
+    @media (min-width: @screen-sm-min) {
+      display: inline-block;
+    }
+  }
+
+  &__link {
+    font-family: @headerFont;
+    color: @fontGrey;
+
+    &:hover {
+      text-decoration: none;
+      color: @orange;
+    }
+  }
+}
 
 .navbar-brand {
   font-family: 'Roboto';
