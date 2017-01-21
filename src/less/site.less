@@ -82,15 +82,27 @@ body {
 }
 
 // Photo Page styles
-.photo-thumb {
-  display: block;
-  height: 200px;
-  width: 200px;
-  margin: 60px;
-  background-position: center;
-  object-fit: cover;
-  cursor: pointer;
+.photos {
+  &__row {
+    margin: 2em 0 4em;
+  }
+
+  &__thumb {
+    display: block;
+    height: 200px;
+    width: 200px;
+    background-position: center;
+    object-fit: cover;
+    cursor: pointer;
+    transition: border 0.15s;
+    border: 1px solid @borderColor;
+
+    &:hover {
+      border: 1px solid darken(@borderColor, 10%);
+    }
+  }
 }
+
 
 //Photo modal styles
 #photoModal {

@@ -1,6 +1,6 @@
 $(document).ready(function ready() {
 
-  var $photoThumb = $('.photo-thumb')
+  var $photoThumb = $('.photos__thumb')
   var $modalImg = $('#photoModal img')
 
   var $navbarLink = $('.navbar__link')
