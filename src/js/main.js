@@ -4,6 +4,8 @@ $(document).ready(function ready() {
   var $modalImg = $('#photoModal img')
 
   var $navbarLink = $('.navbar__link')
+  var $document = $(document)
+  var $navbar = $('.navbar')
 
   function init() {
 
@@ -20,21 +22,15 @@ $(document).ready(function ready() {
       var dataUrl = $(this).attr('src')
       $modalImg.attr('src', dataUrl)
     })
+
+    $document.on('scroll', function() {
+      if ($document.scrollTop() > 0) {
+        $navbar.addClass('shadow')
+      } else {
+        $navbar.removeClass('shadow')
+      }
+    })
   }
 
   init()
 })
-
-
-
-// $(function(){
-//   var hash = window.location.hash;
-//   hash && $('ul.nav a[href="' + hash + '"]').tab('show');
-//
-//   $('.nav-tabs a').click(function (e) {
-//     $(this).tab('show');
-//     var scrollmem = $('body').scrollTop() || $('html').scrollTop();
-//     window.location.hash = this.hash;
-//     $('html,body').scrollTop(scrollmem);
-//   });
-// });
