@@ -91,6 +91,7 @@ body {
     display: block;
     height: 200px;
     width: 200px;
+    margin: 1em auto;
     background-position: center;
     object-fit: cover;
     cursor: pointer;
@@ -99,6 +100,10 @@ body {
 
     &:hover {
       border: 1px solid darken(@borderColor, 10%);
+    }
+
+    @media (min-width: @screen-sm-min) {
+      margin: 0;
     }
   }
 }
