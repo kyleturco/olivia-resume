@@ -1,25 +1,27 @@
 $(document).ready(function ready() {
 
-  var $photoThumb = $('.photos__thumb')
-  var $modalImg = $('#photoModal img')
+  const $photoThumb = $('.photos__thumb')
+  const $modalImg = $('#photoModal img')
 
-  var $navbarLink = $('.navbar__link')
-  var $document = $(document)
-  var $navbar = $('.navbar')
+  const $navbarLink = $('.navbar__link')
+  const $navbarCollapse = $('.navbar-collapse')
+  const $document = $(document)
+  const $navbar = $('.navbar')
 
   function init() {
 
-    var hash = window.location.hash
+    const hash = window.location.hash
     hash && $('a.navbar__link[href="' + hash + '"]').tab('show')
 
     $navbarLink.click(function(e) {
       $(this).tab('show')
+      $navbarCollapse.toggleClass('in')
       window.location.hash = this.hash;
     })
 
     // tells the modal which photo to open
     $photoThumb.on('click', function(e) {
-      var dataUrl = $(this).attr('src')
+      const dataUrl = $(this).attr('src')
       $modalImg.attr('src', dataUrl)
     })
 
