@@ -28,6 +28,7 @@ body {
   background-color: transparent;
   border-radius: 0px;
   padding: .5em 1.5em;
+
   &:hover {
     color: #ffffff;
     background-color: @orange;
@@ -50,6 +51,11 @@ body {
 
   &__photo-container {
     padding-top: 3em;
+
+    @media (min-width: @screen-md-min) {
+      height: 32em;
+      overflow: hidden;
+    }
   }
 }
 
