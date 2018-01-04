@@ -12,10 +12,19 @@
   &__link {
     font-family: @headerFont;
     color: @fontGrey;
+    padding-bottom: 0.5rem;
 
     &:hover {
       text-decoration: none;
       color: @orange;
+    }
+  }
+
+  .text-link.active {
+    color: @orange;
+
+    @media (min-width: @screen-sm-min) {
+      border-bottom: 0.2rem solid @orange;
     }
   }
 

@@ -11,7 +11,15 @@ $(document).ready(function ready() {
   function init() {
 
     const hash = window.location.hash
-    hash && $('a.navbar__link[href="' + hash + '"]').tab('show')
+    hash && $('a.navbar__link[href="' + hash + '"]').tab('show', setActiveTab())
+
+
+    $(window).on('hashchange', setActiveTab)
+
+    function setActiveTab() {
+      $navbarLink.removeClass('active')
+      $('a[href="' + window.location.hash + '"]').addClass('active')
+    }
 
     $navbarLink.click(function(e) {
       $(this).tab('show')
