@@ -37,6 +37,18 @@ body {
   }
 }
 
+// Elements
+
+.hr {
+  &--padded {
+    padding: 3rem 0;
+  }
+
+  &--extra-padded {
+    padding: 6rem 0;
+  }
+}
+
 // Nav
 .navbar {
   padding: 1em;
@@ -57,9 +69,30 @@ body {
       overflow: hidden;
     }
   }
+}
 
-  &__reel {
-    padding-top: 4rem;
+// reel
+.reel {
+  &__divider {
+    margin: 10rem 0 8rem;
+    border-top: 1px solid @borderColor;
+  }
+
+  &__video-container {
+    border: 1px solid @borderColor;
+  }
+
+  &__section {
+    padding: 2rem 0;
+
+    @media (min-width: @screen-md-min) {
+      padding: 4rem 12rem;
+    }
+  }
+
+  &__section-header {
+    margin-bottom: 3rem;
+    text-align: center;
   }
 }
 
