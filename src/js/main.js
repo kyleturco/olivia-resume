@@ -33,7 +33,11 @@ $(document).ready(function ready() {
       const dataUrl = $(this).attr('src')
       const imageTitle = $(this).attr('data-title')
       $modalImg.attr('src', dataUrl)
-      $modalTitle.text(imageTitle)
+      $modalTitle.text('')
+
+      if (imageTitle) {
+        $modalTitle.text(imageTitle)
+      }
     })
 
     $document.on('scroll', function() {
