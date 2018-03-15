@@ -2,6 +2,7 @@ $(document).ready(function ready() {
 
   const $photoThumb = $('.photos__thumb')
   const $modalImg = $('#photoModal img')
+  const $modalTitle = $('.photo-modal__title')
 
   const $navbarLink = $('.navbar__link')
   const $navbarCollapse = $('.navbar-collapse')
@@ -30,7 +31,9 @@ $(document).ready(function ready() {
     // tells the modal which photo to open
     $photoThumb.on('click', function(e) {
       const dataUrl = $(this).attr('src')
+      const imageTitle = $(this).attr('data-title')
       $modalImg.attr('src', dataUrl)
+      $modalTitle.text(imageTitle)
     })
 
     $document.on('scroll', function() {
